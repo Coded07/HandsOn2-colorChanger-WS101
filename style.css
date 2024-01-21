@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab );
+    background-size: 300% 300%;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    color: gold;
+}
+
+.btn {
+    background-color: #23d5ab;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+    font-size: 18px;
+    font-weight: 600;
+    color: darkred;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: rgb(185, 108, 13);
+    box-shadow: 0 0 35px lightblue;
+}
+.btn:active {
+    opacity: calc(0.8);
+}
+
+.heart {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    border-radius: 0 0 10px 0;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    height: 60%;
+    width: 100%;
+    background-color: green;
+    border-radius: 75px 75px 0 0;
+}
+.heart:before {
+    top: -59%;
+}
+.heart:after {
+    transform: rotate(-90deg);
+    right: 78%;
+    top: 20%;
+}
